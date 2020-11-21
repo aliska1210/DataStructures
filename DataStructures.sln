@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{BA185C30-AC31-491D-A16D-23D33F656A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListTests", "ArrayListTests\ArrayListTests.csproj", "{1B043C6B-7891-47AF-8957-06513223D7C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayListTests", "ArrayListTests\ArrayListTests.csproj", "{1B043C6B-7891-47AF-8957-06513223D7C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

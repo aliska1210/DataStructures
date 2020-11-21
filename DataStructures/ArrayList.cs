@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace DataStructures
 {
-    public class ArrayList
+    public class ArrayList: IList
     {
         public int Length { get; private set; }
 
@@ -229,6 +229,7 @@ namespace DataStructures
             Length--;
             DecreaseLength();
         }
+        
         public void Delete(int numberOfValues)
         {
             for (int i = Length-numberOfValues; i<Length; i++)
@@ -269,6 +270,7 @@ namespace DataStructures
             Length--;
             DecreaseLength();
         }
+        
         public void DeleteByIndex(int index, int numberOfValues)
         {
             for (int i = index; i < Length-numberOfValues; i++)
@@ -278,6 +280,7 @@ namespace DataStructures
             Length = Length - numberOfValues;
             DecreaseLength();
         }
+        
         public int GetTheLength()
         {
             return Length;
