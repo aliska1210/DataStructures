@@ -113,13 +113,16 @@ namespace DataStructures.LinkedList
                 _root = new Node(value);
                 Length++;
             }
-            Node current = _root;
-            while (current.Next != null)
+            else
             {
-                current = current.Next;
+                Node current = _root;
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
+                current.Next = new Node(value);
+                Length++;
             }
-            current.Next = new Node(value);
-            Length++;
         }
 
         public void Add(int[] values)

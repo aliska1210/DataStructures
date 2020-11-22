@@ -7,6 +7,7 @@ namespace ArrayListTests
 {
     class LinkedListTests
     {
+        [TestCase(new int[] {  }, 2, new int[1] { 2 })]
         [TestCase(new int[2] { 0, 1 }, 2, new int[3] { 0, 1, 2 })]
         [TestCase(new int[5] { 0, 1, 2, 3, 4 }, 2, new int[6] { 0, 1, 2, 3, 4, 2 })]
         [TestCase(new int[20] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 }, 27, new int[21] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 27 })]
@@ -300,8 +301,8 @@ namespace ArrayListTests
         [TestCase(new int[20] { 19, 1, 2, 4, 3, 5, 6, 7, 8, 19, 10, 11, 12, 13, 16, 15, 14, 17, 18, 9 }, 19, new int[18] { 1, 2, 4, 3, 5, 6, 7, 8, 10, 11, 12, 13, 16, 15, 14, 17, 18, 9 })]
         public void DeleteAllElementsByValueTest(int[] array, int value, int[] exp)
         {
-            ArrayList expected = new ArrayList(exp);
-            ArrayList actual = new ArrayList(array);
+            LinkedList expected = new LinkedList(exp);
+            LinkedList actual = new LinkedList(array);
             actual.DeleteAllElementsByValue(value);
 
             Assert.AreEqual(expected, actual);
